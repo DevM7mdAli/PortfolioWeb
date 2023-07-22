@@ -1,8 +1,32 @@
-* {
+*
+{
   box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
+
+
+
+@media screen and (max-width: 790px) {
+  .card{
+    background-color: black !important;
+    margin: 20px;
+    padding: 20px;
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    -ms-border-radius: 8px;
+    -o-border-radius: 8px;
+  }
+  .All_Cards{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+  
+}  
 
 body {
   font-family: sans-serif;
