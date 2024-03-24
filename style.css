@@ -1,14 +1,12 @@
-*
-{
+* {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
 
-
 @media screen and (max-width: 790px) {
-  .card{
-    background-color: black ;
+  .card {
+    background-color: black;
     margin: 20px;
     padding: 20px;
     width: 100%;
@@ -19,12 +17,12 @@
     -ms-border-radius: 8px;
     -o-border-radius: 8px;
   }
-  .All_Cards{
+  .All_Cards {
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
   }
-}  
+}
 
 body {
   font-family: sans-serif;
@@ -152,7 +150,7 @@ footer img {
 
 .card {
   background-color: black;
-  color: white ;
+  color: white;
   text-decoration: none;
   margin: 20px;
   padding: 20px;
@@ -165,11 +163,10 @@ footer img {
   -o-border-radius: 8px;
 }
 
-.card:hover{
+.card:hover {
   background-color: white;
   color: black;
 }
-
 
 .All_Cards {
   display: flex;
