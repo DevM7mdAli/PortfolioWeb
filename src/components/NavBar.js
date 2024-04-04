@@ -1,7 +1,7 @@
 export default function NavBar() {
   const navName = ["About", "Skills", "Projects", "Experiences"];
   return (
-    <nav className="flex flex-row justify-center bg-transparent mt-2">
+    <nav className="flex flex-row justify-center  mt-2">
 
       <div className="flex flex-grow gap-x-10 justify-center">
         {navName.map((category) => (

@@ -5,8 +5,14 @@ module.exports = {
   ],
   theme: {
     extend: {
+      screens: {
+        'xs': '200px',
+      },
       fontFamily: {
         'Reddit': ["Reddit Mono", "monospace"]
+      },
+      colors: {
+
       }
     },
   },
