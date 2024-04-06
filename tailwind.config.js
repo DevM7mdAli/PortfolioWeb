@@ -12,7 +12,8 @@ module.exports = {
         'Reddit': ["Reddit Mono", "monospace"]
       },
       colors: {
-
+        "btnBgColor": "#3b82f6",
+        "bgFromGrad": "#09203f"
       }
     },
   },

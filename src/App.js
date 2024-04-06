@@ -9,10 +9,13 @@ import ProjectCard from './components/projects/ProjectCard';
 
 function App() {
   return (
-    <div className="App font-Reddit flex flex-col items-center h-screen text-white bg-[#29323c]">
-      <div className='w-full bg-white bg-opacity-45'>
-        <NavBar />
-      </div>
+    <div className="App font-Reddit flex flex-col items-center min-h-screen text-white bg-[#29323c]">
+      {false ?
+        <div className='w-full bg-white bg-opacity-45'>
+          <NavBar />
+        </div>
+        : <></>
+      }
 
       <div className='flex flex-col gap-y-8 justify-center items-center w-full px-24 mt-20'>
         <AboutCard imgLogo={Logo} imgGif={LogoGif} about={`${me.about}`} />
