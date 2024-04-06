@@ -5,6 +5,7 @@ import Skills from './components/Skills/Skills'
 import me from './me.json'
 import Logo from './assets/aboutPics/HiEmoji.png'
 import LogoGif from './assets/aboutPics/HiEmojiGif.gif'
+import ProjectCard from './components/projects/ProjectCard';
 
 function App() {
   return (
@@ -17,6 +18,8 @@ function App() {
         <AboutCard imgLogo={Logo} imgGif={LogoGif} about={`${me.about}`} />
 
         <Skills />
+
+        <ProjectCard />
       </div>
     </div>
   );
