@@ -12,7 +12,7 @@ export default function ListOfSkills() {
       { name: 'TypeScript', icon: SiTypescript }, { name: 'Dart', icon: SiDart }]
     },
     {
-      title: "Font End", allSkill: [{ name: 'React JS', icon: FaReact },
+      title: "Front End", allSkill: [{ name: 'React JS', icon: FaReact },
       { name: 'Fluter', icon: RiFlutterFill }, { name: 'NextJS', icon: SiNextdotjs }]
     },
     {

@@ -14,7 +14,7 @@ const projects = [
     img: Investech
   },
   {
-    tag: "Start-up",
+    tag: "Volunteering",
     name: "CCSIT-SC",
     info: "A web application for ccsit council that helps student in the campus. It offers a lot of services like GPA calculator, Room finder, missing items page , contacts info and council members contact info. I used html , tailwind , js and fireBase to make the website.",
     link: "https://github.com/DevM7mdAli/Quizle-App",
@@ -56,7 +56,7 @@ export default function InfoPart() {
       {
         projects.map(infoProject => {
           return (
-            <div className='flex flex-col max-w-80 shadow-2xl rounded shadow-bgFromGrad  gap-y-2'>
+            <div className='flex flex-col max-w-80 shadow-2xl rounded shadow-bgFromGrad transition-all scale-95 hover:scale-100 gap-y-2'>
               <div>
                 <h1 className='mt-1 ml-1 absolute text-black p-2 bg-opacity-40 bg-white rounded-lg'>
                   {infoProject.tag}
@@ -64,7 +64,7 @@ export default function InfoPart() {
                 <img src={infoProject.img} className={`w-full max-h-48 ${infoProject.object ? "object-contain" : "object-cover"}`} alt={infoProject.name} />
               </div>
 
-              <div className='px-2'>
+              <div className='px-10'>
                 <h1 className='text-lg mb-2'>
                   {infoProject.name}
                 </h1>
