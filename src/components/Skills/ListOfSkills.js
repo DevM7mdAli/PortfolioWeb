@@ -1,22 +1,26 @@
-import { SiNextdotjs, SiFlask, SiMysql, SiSqlite } from 'react-icons/si'
+import { SiNextdotjs, SiFlask, SiMysql, SiSqlite, SiDart, SiTypescript } from 'react-icons/si'
 import { FaReact } from "react-icons/fa";
 import { RiFlutterFill } from "react-icons/ri";
-import { IoLogoFirebase } from "react-icons/io5";
+import { IoLogoFirebase, IoLogoJavascript } from "react-icons/io5";
 
 
 export default function ListOfSkills() {
 
   const listOfSkills = [
     {
+      title: "Languages", allSkill: [{ name: 'JavaScript', icon: IoLogoJavascript },
+      { name: 'TypeScript', icon: SiTypescript }, { name: 'Dart', icon: SiDart }]
+    },
+    {
       title: "Font End", allSkill: [{ name: 'React JS', icon: FaReact },
-      { name: 'Fluter', icon: RiFlutterFill }, { name: 'Fluter', icon: SiNextdotjs }]
+      { name: 'Fluter', icon: RiFlutterFill }, { name: 'NextJS', icon: SiNextdotjs }]
     },
     {
       title: "BackEnd End", allSkill: [{ name: 'FireBase', icon: IoLogoFirebase },
       { name: 'Next JS', icon: SiNextdotjs }, { name: 'Flask', icon: SiFlask }]
     },
     {
-      title: "dataBase", allSkill: [{ name: 'firebase', icon: SiNextdotjs },
+      title: "dataBase", allSkill: [{ name: 'FireStore', icon: IoLogoFirebase },
       { name: 'mySQL', icon: SiMysql }, { name: 'SQLite', icon: SiSqlite }]
     },
   ]

@@ -1,6 +1,9 @@
 import { CiLink } from "react-icons/ci";
 import Investech from '../../assets/ProjectImg/Investech.jpeg'
 import CCSIT from '../../assets/ProjectImg/CCSIT-SC.jpeg'
+import Quizle from '../../assets/ProjectImg/Quizle.jpg'
+import PrayTimes from '../../assets/ProjectImg/PrayTimes.png'
+import FormFully from '../../assets/ProjectImg/FormFully.png'
 
 const projects = [
   {
@@ -14,8 +17,32 @@ const projects = [
     tag: "Start-up",
     name: "CCSIT-SC",
     info: "A web application for ccsit council that helps student in the campus. It offers a lot of services like GPA calculator, Room finder, missing items page , contacts info and council members contact info. I used html , tailwind , js and fireBase to make the website.",
-    link: "https://devm7mdali.github.io/CCSIT-SC",
+    link: "https://github.com/DevM7mdAli/Quizle-App",
     img: CCSIT
+  },
+  {
+    tag: "Personal",
+    name: "Quizle",
+    info: "A smartphone app for test your knowledge with a variety of technology related questions each question has 4 MCQ one of the choice is correct, developed using Flutter and Dart.",
+    link: "https://devm7mdali.github.io/CCSIT-SC",
+    img: Quizle,
+    object: 1
+  },
+  {
+    tag: "Personal",
+    name: "Pray Times Extension",
+    info: "A web browser extension that let you see the pray time by choosing your city and give you random ayah every time you open the extension, i used html , tailwind and js to make it.",
+    link: "https://github.com/DevM7mdAli/Pray-Times",
+    img: PrayTimes,
+    object: 1
+  },
+  {
+    tag: "Personal",
+    name: "FormFully",
+    info: "A Chromium-based browsers extension that Automatically Auto fill in input fields with any value you want to save your precious time, i used html tailwind js to make it.",
+    link: "https://chromewebstore.google.com/detail/formfully/ojlpggfkjhgadcjdmkgdmpilhmnghlmj?hl=en&authuser=0",
+    img: FormFully,
+    object: 1
   },
 
 
@@ -25,16 +52,16 @@ const projects = [
 
 export default function InfoPart() {
   return (
-    <div className='flex flex-row flex-wrap gap-x-12 gap-y-10'>
+    <div className='flex flex-row justify-center flex-wrap gap-x-12 gap-y-10'>
       {
         projects.map(infoProject => {
           return (
-            <div className='flex flex-col max-w-80 shadow-2xl shadow-bgFromGrad border border-opacity-10 border-spacing-6 border-white gap-y-2'>
+            <div className='flex flex-col max-w-80 shadow-2xl rounded shadow-bgFromGrad  gap-y-2'>
               <div>
-                <h1 className='absolute text-black p-2 bg-opacity-40 bg-white rounded-lg'>
+                <h1 className='mt-1 ml-1 absolute text-black p-2 bg-opacity-40 bg-white rounded-lg'>
                   {infoProject.tag}
                 </h1>
-                <img src={infoProject.img} className='w-full max-h-48' alt="project 1" />
+                <img src={infoProject.img} className={`w-full max-h-48 ${infoProject.object ? "object-contain" : "object-cover"}`} alt={infoProject.name} />
               </div>
 
               <div className='px-2'>
@@ -46,8 +73,8 @@ export default function InfoPart() {
                 </h2>
               </div>
 
-              <div>
-                <a className="flex" href={infoProject.link}>
+              <div className="flex items-end h-full px-2 pb-1 pt-1">
+                <a className="flex items-center hover:underline" href={infoProject.link}>
                   view project {<CiLink />}
                 </a>
               </div>
