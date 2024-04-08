@@ -17,14 +17,14 @@ const projects = [
     tag: "Volunteering",
     name: "CCSIT-SC",
     info: "A web application for ccsit council that helps student in the campus. It offers a lot of services like GPA calculator, Room finder, missing items page , contacts info and council members contact info. I used html , tailwind , js and fireBase to make the website.",
-    link: "https://github.com/DevM7mdAli/Quizle-App",
+    link: "https://devm7mdali.github.io/CCSIT-SC",
     img: CCSIT
   },
   {
     tag: "Personal",
     name: "Quizle",
     info: "A smartphone app for test your knowledge with a variety of technology related questions each question has 4 MCQ one of the choice is correct, developed using Flutter and Dart.",
-    link: "https://devm7mdali.github.io/CCSIT-SC",
+    link: "https://github.com/DevM7mdAli/Quizle-App",
     img: Quizle,
     object: 1
   },
@@ -64,7 +64,7 @@ export default function InfoPart() {
                 <img src={infoProject.img} className={`w-full max-h-48 ${infoProject.object ? "object-contain" : "object-cover"}`} alt={infoProject.name} />
               </div>
 
-              <div className='px-10'>
+              <div className='px-5'>
                 <h1 className='text-lg mb-2'>
                   {infoProject.name}
                 </h1>
@@ -73,8 +73,8 @@ export default function InfoPart() {
                 </h2>
               </div>
 
-              <div className="flex items-end h-full px-2 pb-1 pt-1">
-                <a className="flex items-center hover:underline" href={infoProject.link}>
+              <div className="flex items-end h-full px-5 pb-2 pt-1">
+                <a className="flex items-center rounded-xl bg-btnBgColor px-2 py-1 text-lg font-bold hover:underline" href={infoProject.link} target="_blank" rel="noopener noreferrer">
                   view project {<CiLink />}
                 </a>
               </div>

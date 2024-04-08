@@ -20,7 +20,7 @@ export default function ListOfSkills() {
       { name: 'Next JS', icon: SiNextdotjs }, { name: 'Flask', icon: SiFlask }]
     },
     {
-      title: "dataBase", allSkill: [{ name: 'FireStore', icon: IoLogoFirebase },
+      title: "DataBase", allSkill: [{ name: 'FireStore', icon: IoLogoFirebase },
       { name: 'mySQL', icon: SiMysql }, { name: 'SQLite', icon: SiSqlite }]
     },
   ]
