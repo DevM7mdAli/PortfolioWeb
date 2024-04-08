@@ -17,7 +17,7 @@ export default function ListOfSkills() {
     },
     {
       title: "BackEnd End", allSkill: [{ name: 'FireBase', icon: IoLogoFirebase },
-      { name: 'Next JS', icon: SiNextdotjs }, { name: 'Flask', icon: SiFlask }]
+      { name: 'NextJS', icon: SiNextdotjs }, { name: 'Flask', icon: SiFlask }]
     },
     {
       title: "DataBase", allSkill: [{ name: 'FireStore', icon: IoLogoFirebase },
@@ -27,7 +27,7 @@ export default function ListOfSkills() {
 
 
   return (
-    <div className='flex flex-row justify-center flex-wrap gap-x-12 text-center'>
+    <div className='grid grid-cols-2 md:grid md:grid-cols-4  justify-center flex-wrap gap-x-12 text-center'>
       {
         listOfSkills.map(({ title, allSkill }) => (
           <div className='flex flex-col gap-y-9 p-4 bg-gradient-to-tr from-bgFromGrad to-black rounded-lg transition-all scale-95 hover:scale-100' key={title} >

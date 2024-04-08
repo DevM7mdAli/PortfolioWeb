@@ -4,6 +4,7 @@ import CCSIT from '../../assets/ProjectImg/CCSIT-SC.jpeg'
 import Quizle from '../../assets/ProjectImg/Quizle.jpg'
 import PrayTimes from '../../assets/ProjectImg/PrayTimes.png'
 import FormFully from '../../assets/ProjectImg/FormFully.png'
+import OldPort from '../../assets/ProjectImg/Old Portfolio.png'
 
 const projects = [
   {
@@ -44,8 +45,13 @@ const projects = [
     img: FormFully,
     object: 1
   },
-
-
+  {
+    tag: "Personal",
+    name: "Old Portfolio",
+    info: "My first portfolio i made when i start learn web development",
+    link: "https://devm7mdali.github.io/Old-Portfolio",
+    img: OldPort,
+  }
 ]
 
 
