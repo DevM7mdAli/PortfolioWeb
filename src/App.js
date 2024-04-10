@@ -6,8 +6,26 @@ import me from './data/me.json'
 import Logo from './assets/aboutPics/HiEmoji.png'
 import LogoGif from './assets/aboutPics/HiEmojiGif.gif'
 import ProjectCard from './components/projects/ProjectCard';
+import { createBrowserRouter, Route, createRoutesFromElements, RouterProvider } from 'react-router-dom'
+import Error404 from './components/Error'
+
+
+
+const router = createBrowserRouter(
+  createRoutesFromElements(
+    <Route errorElement={< Error404 />}>
+      <Route index element={<HolderElement />} />
+    </Route>
+  )
+)
 
 function App() {
+  return (
+    <RouterProvider router={router} />
+  );
+}
+
+function HolderElement() {
   return (
     <div className="App font-Reddit flex flex-col items-center min-h-screen pb-6 text-white bg-[#29323c]">
       {false ?
@@ -25,7 +43,8 @@ function App() {
         <ProjectCard />
       </div>
     </div>
-  );
+  )
 }
+
 
 export default App;
