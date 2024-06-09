@@ -2,6 +2,7 @@ import { SiNextdotjs, SiFlask, SiMysql, SiSqlite, SiDart, SiTypescript } from 'r
 import { FaReact } from "react-icons/fa";
 import { RiFlutterFill } from "react-icons/ri";
 import { IoLogoFirebase, IoLogoJavascript } from "react-icons/io5";
+import { motion } from 'framer-motion'
 
 
 export default function ListOfSkills() {
@@ -16,7 +17,7 @@ export default function ListOfSkills() {
       { name: 'Fluter', icon: RiFlutterFill }, { name: 'NextJS', icon: SiNextdotjs }]
     },
     {
-      title: "BackEnd End", allSkill: [{ name: 'FireBase', icon: IoLogoFirebase },
+      title: "Back End", allSkill: [{ name: 'FireBase', icon: IoLogoFirebase },
       { name: 'NextJS', icon: SiNextdotjs }, { name: 'Flask', icon: SiFlask }]
     },
     {
@@ -27,7 +28,11 @@ export default function ListOfSkills() {
 
 
   return (
-    <div className='grid grid-cols-2 md:grid md:grid-cols-4  justify-center flex-wrap gap-x-12 text-center'>
+    <motion.div className='grid grid-cols-2 md:grid md:grid-cols-4  justify-center flex-wrap gap-x-12 text-center'
+      initial={{ x: -100 }}
+      animate={{ x: 0 }}
+      transition={{ duration: 1 }}
+    >
       {
         listOfSkills.map(({ title, allSkill }) => (
           <div className='flex flex-col gap-y-9 p-4 bg-gradient-to-tr from-bgFromGrad to-black rounded-lg transition-all scale-95 hover:scale-100' key={title} >
@@ -45,6 +50,6 @@ export default function ListOfSkills() {
           </div>
         ))
       }
-    </div>
+    </motion.div>
   )
 }

@@ -35,7 +35,7 @@ function HolderElement() {
         : <></>
       }
 
-      <div className='flex flex-col gap-y-24 justify-center items-center w-full px-8 lg:px-24 mt-20'>
+      <div className='flex flex-col gap-y-40 justify-center items-center w-full px-8 lg:px-24 mt-20'>
         <AboutCard imgLogo={Logo} imgGif={LogoGif} resumeLink={me.resumeLink} linkedLink={me.linkedLink} GitHubLink={me.GitHubLink} XLink={me.XLink} Email={me.Email} about={`${me.about}`} />
 
         <Skills />

@@ -1,4 +1,5 @@
 import { CiLink } from "react-icons/ci";
+import { motion } from "framer-motion";
 import Investech from '../../assets/ProjectImg/Investech.jpeg'
 import CCSIT from '../../assets/ProjectImg/CCSIT-SC.jpeg'
 import Quizle from '../../assets/ProjectImg/Quizle.jpg'
@@ -62,7 +63,11 @@ export default function InfoPart() {
       {
         projects.map(infoProject => {
           return (
-            <div className='flex flex-col max-w-80 shadow-2xl rounded shadow-bgFromGrad transition-all scale-95 hover:scale-100 gap-y-2'>
+            <motion.div className='flex flex-col max-w-80 shadow-2xl rounded shadow-bgFromGrad transition-all scale-95 hover:scale-100 gap-y-2'
+              initial={{ opacity: 0, y: -5 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 2, delay: 0.1, type: "spring", stiffness: 80 }}
+            >
               <div>
                 <h1 className='mt-1 ml-1 absolute text-black p-2 bg-opacity-40 bg-white rounded-lg'>
                   {infoProject.tag}
@@ -80,11 +85,13 @@ export default function InfoPart() {
               </div>
 
               <div className="flex items-end h-full px-5 pb-2 pt-1">
-                <a className="flex items-center rounded-xl bg-btnBgColor px-2 py-1 text-lg font-bold hover:underline" href={infoProject.link} target="_blank" rel="noopener noreferrer">
+                <motion.a className="flex items-center rounded-xl bg-btnBgColor px-2 py-1 text-lg font-bold hover:underline" href={infoProject.link} target="_blank" rel="noopener noreferrer"
+                  whileHover={{ scale: 1.1 }}
+                >
                   view project {<CiLink />}
-                </a>
+                </motion.a>
               </div>
-            </div>
+            </motion.div>
           )
         })
       }
