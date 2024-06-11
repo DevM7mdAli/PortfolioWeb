@@ -1,8 +1,8 @@
 {
   "files": {
-    "main.css": "/static/css/main.928a7aa8.css",
-    "main.js": "/static/js/main.b149b212.js",
-    "static/js/453.1407b060.chunk.js": "/static/js/453.1407b060.chunk.js",
+    "main.css": "/static/css/main.fde5802f.css",
+    "main.js": "/static/js/main.80ebc063.js",
+    "static/js/453.ace21015.chunk.js": "/static/js/453.ace21015.chunk.js",
     "static/media/HiEmojiGif.gif": "/static/media/HiEmojiGif.8c375e713a11e061a867.gif",
     "static/media/Old Portfolio.png": "/static/media/Old Portfolio.80ea967e6f367ea4c839.png",
     "static/media/HiEmoji.png": "/static/media/HiEmoji.567df3cc38bba0dd4efa.png",
@@ -12,12 +12,12 @@
     "static/media/FormFully.png": "/static/media/FormFully.6727bd7db126f91c2a23.png",
     "static/media/PrayTimes.png": "/static/media/PrayTimes.260fde7c3b62714a0c35.png",
     "index.html": "/index.html",
-    "main.928a7aa8.css.map": "/static/css/main.928a7aa8.css.map",
-    "main.b149b212.js.map": "/static/js/main.b149b212.js.map",
-    "453.1407b060.chunk.js.map": "/static/js/453.1407b060.chunk.js.map"
+    "main.fde5802f.css.map": "/static/css/main.fde5802f.css.map",
+    "main.80ebc063.js.map": "/static/js/main.80ebc063.js.map",
+    "453.ace21015.chunk.js.map": "/static/js/453.ace21015.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.928a7aa8.css",
-    "static/js/main.b149b212.js"
+    "static/css/main.fde5802f.css",
+    "static/js/main.80ebc063.js"
   ]
 }
