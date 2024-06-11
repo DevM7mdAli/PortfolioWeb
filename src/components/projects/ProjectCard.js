@@ -5,7 +5,7 @@ export default function projectCard() {
     <section id="projects">
       <div className='flex flex-col gap-y-9 text-center'>
         <h1 className="text-5xl font-bold">
-          Projects i worked on
+          Projects I worked on
         </h1>
 
         <div>
