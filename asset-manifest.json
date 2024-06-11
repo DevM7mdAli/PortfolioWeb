@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.fde5802f.css",
-    "main.js": "/static/js/main.80ebc063.js",
+    "main.css": "/static/css/main.9a84a038.css",
+    "main.js": "/static/js/main.b7a09f8a.js",
     "static/js/453.ace21015.chunk.js": "/static/js/453.ace21015.chunk.js",
     "static/media/HiEmojiGif.gif": "/static/media/HiEmojiGif.8c375e713a11e061a867.gif",
     "static/media/Old Portfolio.png": "/static/media/Old Portfolio.80ea967e6f367ea4c839.png",
@@ -11,13 +11,14 @@
     "static/media/CCSIT-SC.jpeg": "/static/media/CCSIT-SC.73d2f640e60f774411b2.jpeg",
     "static/media/FormFully.png": "/static/media/FormFully.6727bd7db126f91c2a23.png",
     "static/media/PrayTimes.png": "/static/media/PrayTimes.260fde7c3b62714a0c35.png",
+    "static/media/DMA.png": "/static/media/DMA.d6fb2a7601e1911aadf4.png",
     "index.html": "/index.html",
-    "main.fde5802f.css.map": "/static/css/main.fde5802f.css.map",
-    "main.80ebc063.js.map": "/static/js/main.80ebc063.js.map",
+    "main.9a84a038.css.map": "/static/css/main.9a84a038.css.map",
+    "main.b7a09f8a.js.map": "/static/js/main.b7a09f8a.js.map",
     "453.ace21015.chunk.js.map": "/static/js/453.ace21015.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.fde5802f.css",
-    "static/js/main.80ebc063.js"
+    "static/css/main.9a84a038.css",
+    "static/js/main.b7a09f8a.js"
   ]
 }
