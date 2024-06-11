@@ -8,6 +8,7 @@ import LogoGif from './assets/aboutPics/HiEmojiGif.gif'
 import ProjectCard from './components/projects/ProjectCard';
 import { createBrowserRouter, Route, createRoutesFromElements, RouterProvider } from 'react-router-dom'
 import Error404 from './components/Error'
+import Footer from './components/Footer';
 
 
 
@@ -27,20 +28,22 @@ function App() {
 
 function HolderElement() {
   return (
-    <div className="App font-Reddit flex flex-col items-center min-h-screen pb-6 text-white bg-mainBackground">
+    <div className="App font-Reddit flex flex-col items-center min-h-screen text-white bg-mainBackground">
 
 
       <NavBar />
 
 
+      <div>
+        <div className='flex flex-col gap-y-64 justify-center items-center w-full px-8 lg:px-24 mt-20'>
+          <AboutCard imgLogo={Logo} imgGif={LogoGif} resumeLink={me.resumeLink} linkedLink={me.linkedLink} GitHubLink={me.GitHubLink} XLink={me.XLink} Email={me.Email} about={`${me.about}`} />
 
-      <div className='flex flex-col gap-y-64 justify-center items-center w-full px-8 lg:px-24 mt-20'>
-        <AboutCard imgLogo={Logo} imgGif={LogoGif} resumeLink={me.resumeLink} linkedLink={me.linkedLink} GitHubLink={me.GitHubLink} XLink={me.XLink} Email={me.Email} about={`${me.about}`} />
+          <Skills />
 
-        <Skills />
-
-        <ProjectCard />
+          <ProjectCard />
+        </div>
       </div>
+      <Footer linkedLink={me.linkedLink} GitHubLink={me.GitHubLink} XLink={me.XLink} Email={me.Email} />
     </div>
   )
 }
