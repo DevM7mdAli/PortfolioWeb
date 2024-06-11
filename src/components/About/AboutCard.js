@@ -7,10 +7,11 @@ import { motion } from "framer-motion"
 export default function AboutCard({ imgLogo, about, imgGif, resumeLink, linkedLink, GitHubLink, XLink, Email }) {
   const [inMouse, setInMouse] = useState(false)
   return (
-    <motion.div className="flex flex-col lg:flex-row p-9 gap-x-12 w-full border-blue-200 bg-gradient-to-tr from-bgFromGrad to-black rounded-lg transition-all scale-95 hover:scale-100" id="AboutMe"
+    <motion.div className="flex flex-col lg:flex-row p-9 gap-x-12 max-w-7xl border-blue-200 bg-gradient-to-tr from-bgFromGrad to-black rounded-lg transition-all scale-95 hover:scale-100" id="AboutMe"
       initial={{ opacity: 0, y: -20 }}
       whileInView={{ opacity: 1, y: 0 }}
       transition={{ duration: 1, delay: 0.1, type: "spring", stiffness: 80 }}
+      viewport={{ once: true }}
     >
 
       <div>

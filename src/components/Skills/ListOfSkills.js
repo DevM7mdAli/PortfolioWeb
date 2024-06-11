@@ -37,9 +37,9 @@ export default function ListOfSkills() {
         listOfSkills.map(({ title, allSkill }) => (
           <div className='flex flex-col gap-y-9 p-4 bg-gradient-to-tr from-bgFromGrad to-black rounded-lg transition-all scale-95 hover:scale-100' key={title} >
             <h1>{title}</h1>
-            {allSkill.map(skill => {
+            {allSkill.map((skill, index) => {
               return (
-                <div>
+                <div key={index}>
                   <h2>{skill.name}</h2>
                   <div className='flex justify-center'>
                     {<skill.icon size={80} />}

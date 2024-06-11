@@ -61,9 +61,10 @@ export default function InfoPart() {
   return (
     <div className='flex flex-row justify-center flex-wrap gap-x-12 gap-y-10'>
       {
-        projects.map(infoProject => {
+        projects.map((infoProject, index) => {
           return (
             <motion.div className='flex flex-col max-w-80 shadow-2xl rounded shadow-bgFromGrad transition-all scale-95 hover:scale-100 gap-y-2'
+              key={index}
               initial={{ opacity: 0, y: -5 }}
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 2, delay: 0.1, type: "spring", stiffness: 80 }}

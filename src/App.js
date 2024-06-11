@@ -27,15 +27,14 @@ function App() {
 
 function HolderElement() {
   return (
-    <div className="App font-Reddit flex flex-col items-center min-h-screen pb-6 text-white bg-[#29323c]">
-      {false ?
-        <div className='w-full bg-white bg-opacity-45'>
-          <NavBar />
-        </div>
-        : <></>
-      }
+    <div className="App font-Reddit flex flex-col items-center min-h-screen pb-6 text-white bg-mainBackground">
 
-      <div className='flex flex-col gap-y-40 justify-center items-center w-full px-8 lg:px-24 mt-20'>
+
+      <NavBar />
+
+
+
+      <div className='flex flex-col gap-y-64 justify-center items-center w-full px-8 lg:px-24 mt-20'>
         <AboutCard imgLogo={Logo} imgGif={LogoGif} resumeLink={me.resumeLink} linkedLink={me.linkedLink} GitHubLink={me.GitHubLink} XLink={me.XLink} Email={me.Email} about={`${me.about}`} />
 
         <Skills />
