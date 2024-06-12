@@ -24,12 +24,11 @@ export default function NavBar() {
   }, []);
 
   const navList = (
-    <ul className="mt-2 mb-4 flex flex-col gap-2 lg:mb-0 lg:mt-0 lg:flex-row lg:items-center lg:gap-6">
+    <ul className="mt-6 mb-1 flex flex-col gap-4 lg:mb-0 lg:mt-0 lg:flex-row lg:items-center lg:gap-6">
       <Typography
         as="li"
-        variant="small"
         color="white"
-        className="p-1 font-normal"
+        className="p-1"
       >
         <a href="#AboutMe" className="flex items-center">
           About me
@@ -37,9 +36,8 @@ export default function NavBar() {
       </Typography>
       <Typography
         as="li"
-        variant="small"
         color="white"
-        className="p-1 font-normal"
+        className="p-1"
       >
         <a href="#Skills" className="flex items-center">
           Skills
@@ -47,9 +45,8 @@ export default function NavBar() {
       </Typography>
       <Typography
         as="li"
-        variant="small"
         color="white"
-        className="p-1 font-normal"
+        className="p-1"
       >
         <a href="#projects" className="flex items-center">
           Projects
