@@ -1,5 +1,5 @@
 import { SiNextdotjs, SiFlask, SiMysql, SiSqlite, SiDart, SiTypescript } from 'react-icons/si'
-import { FaReact } from "react-icons/fa";
+import { FaReact, FaPhp } from "react-icons/fa";
 import { RiFlutterFill } from "react-icons/ri";
 import { IoLogoFirebase, IoLogoJavascript } from "react-icons/io5";
 import { motion } from 'framer-motion'
@@ -17,7 +17,7 @@ export default function ListOfSkills() {
       { name: 'Fluter', icon: RiFlutterFill }, { name: 'NextJS', icon: SiNextdotjs }]
     },
     {
-      title: "Back End", allSkill: [{ name: 'FireBase', icon: IoLogoFirebase },
+      title: "Back End", allSkill: [{ name: 'PHP', icon: FaPhp },
       { name: 'NextJS', icon: SiNextdotjs }, { name: 'Flask', icon: SiFlask }]
     },
     {

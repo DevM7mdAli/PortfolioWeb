@@ -11,7 +11,6 @@ import Error404 from './components/Error'
 import Footer from './components/Footer';
 
 
-
 const router = createBrowserRouter(
   createRoutesFromElements(
     <Route errorElement={< Error404 />}>
