@@ -1,25 +1,18 @@
 {
   "files": {
-    "main.css": "/static/css/main.fb556489.css",
-    "main.js": "/static/js/main.ed13742e.js",
+    "main.css": "/static/css/main.e14e4b73.css",
+    "main.js": "/static/js/main.c85325c9.js",
     "static/js/453.ace21015.chunk.js": "/static/js/453.ace21015.chunk.js",
     "static/media/HiEmojiGif.gif": "/static/media/HiEmojiGif.8c375e713a11e061a867.gif",
-    "static/media/Old Portfolio.png": "/static/media/Old Portfolio.80ea967e6f367ea4c839.png",
     "static/media/HiEmoji.png": "/static/media/HiEmoji.567df3cc38bba0dd4efa.png",
-    "static/media/Quizle.jpg": "/static/media/Quizle.ded9f851961e25296b48.jpg",
-    "static/media/Investech.jpeg": "/static/media/Investech.7769d01d2844aa4ba481.jpeg",
-    "static/media/CCSIT-SC.jpeg": "/static/media/CCSIT-SC.73d2f640e60f774411b2.jpeg",
-    "static/media/Androidy-shop.png": "/static/media/Androidy-shop.ea0447b98fb689b21450.png",
-    "static/media/FormFully.png": "/static/media/FormFully.6727bd7db126f91c2a23.png",
-    "static/media/PrayTimes.png": "/static/media/PrayTimes.260fde7c3b62714a0c35.png",
     "static/media/DMA.png": "/static/media/DMA.d6fb2a7601e1911aadf4.png",
     "index.html": "/index.html",
-    "main.fb556489.css.map": "/static/css/main.fb556489.css.map",
-    "main.ed13742e.js.map": "/static/js/main.ed13742e.js.map",
+    "main.e14e4b73.css.map": "/static/css/main.e14e4b73.css.map",
+    "main.c85325c9.js.map": "/static/js/main.c85325c9.js.map",
     "453.ace21015.chunk.js.map": "/static/js/453.ace21015.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.fb556489.css",
-    "static/js/main.ed13742e.js"
+    "static/css/main.e14e4b73.css",
+    "static/js/main.c85325c9.js"
   ]
 }
