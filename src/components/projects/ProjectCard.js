@@ -40,7 +40,7 @@ export default function ProjectCard() {
             </div> :
 
             <div className="flex flex-row justify-center items-center flex-wrap ">
-              <Loading />
+              <Loading typeLoad={'balls'} />
             </div>
         }
       </div>

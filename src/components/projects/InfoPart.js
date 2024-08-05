@@ -1,9 +1,28 @@
 import { CiLink } from "react-icons/ci";
 import { motion } from "framer-motion";
-
+import { useEffect, useState } from 'react'
+import app from '../../firebase'
+import { getDownloadURL, getStorage, ref } from "firebase/storage";
+import Loading from "../Loading";
 
 
 export default function InfoPart({ tag, img, name, info, object, link, index }) {
+  const [image, setImage] = useState('')
+  const [imgFinishLoad, setImgFinishLoad] = useState(false);
+
+  useEffect(() => {
+    const storage = getStorage(app);
+    getDownloadURL(ref(storage, img))
+      .then((url) => {
+        setImage(url,
+          setImgFinishLoad(true)
+        );
+      })
+      .catch((error) => {
+        console.error(error);
+      });
+  }, [img]);
+
   return (
     <motion.div className='flex flex-col max-w-80 shadow-2xl rounded shadow-bgFromGrad transition-all scale-95 hover:scale-100 gap-y-2'
       key={index}
@@ -15,7 +34,14 @@ export default function InfoPart({ tag, img, name, info, object, link, index }) 
         <h1 className='mt-1 ml-1 absolute text-black p-2 bg-opacity-40 bg-white rounded-lg'>
           {tag}
         </h1>
-        <img src={img} className={`w-full max-h-48 ${object ? "object-contain" : "object-cover"}`} alt={name} />
+        {imgFinishLoad ?
+          <img src={image} className={`w-full max-h-48 ${object ? "object-contain" : "object-cover"}`} alt={name} />
+
+          :
+          <div className="flex justify-center items-center">
+            <Loading typeLoad={'spinningBubbles'} />
+          </div>
+        }
       </div>
 
       <div className='px-5'>
