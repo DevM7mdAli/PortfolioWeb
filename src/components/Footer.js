@@ -7,7 +7,7 @@ import DMA from '../assets/DMA.png'
 export default function Footer({ linkedLink, GitHubLink, XLink, Email }) {
   return (
     <motion.footer className="w-full bg-mainBackground p-8 mt-20"
-      initial={{ opacity: 0, y: 20 }}
+      initial={{ opacity: 0, y: -10 }}
       whileInView={{ opacity: 1, y: 0 }}
       transition={{ duration: 1, delay: 0.1, type: "spring", stiffness: 80 }}
       viewport={{ once: true }}
