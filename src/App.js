@@ -9,6 +9,7 @@ import ProjectCard from './components/projects/ProjectCard';
 import { createBrowserRouter, Route, createRoutesFromElements, RouterProvider } from 'react-router-dom'
 import Error404 from './components/Error'
 import Footer from './components/Footer';
+import ContactForm from './components/ContactMe/ContactForm';
 
 
 const router = createBrowserRouter(
@@ -40,6 +41,8 @@ function HolderElement() {
           <Skills />
 
           <ProjectCard />
+
+          <ContactForm />
         </div>
       </div>
       <Footer linkedLink={me.linkedLink} GitHubLink={me.GitHubLink} XLink={me.XLink} Email={me.Email} />

@@ -52,6 +52,15 @@ export default function NavBar() {
           Projects
         </a>
       </Typography>
+      <Typography
+        as="li"
+        color="white"
+        className="p-1"
+      >
+        <a href="#contact" className="flex items-center">
+          Contact Me
+        </a>
+      </Typography>
     </ul>
   );
 
