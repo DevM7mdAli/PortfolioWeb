@@ -19,9 +19,9 @@ export default function AboutCard({ imgLogo, about, imgGif, resumeLink, linkedLi
 
       <TypeAnimation
         sequence={[
-          'About Me', 2500,
-          'Web Developer', 2000,
-          'App Developer', 2000,
+          'About me', 2500,
+          'Web developer', 2000,
+          'App developer', 2000,
           'Cyber security', 2000,
         ]}
         wrapper="div"

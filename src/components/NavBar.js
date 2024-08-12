@@ -58,7 +58,7 @@ export default function NavBar() {
         className="p-1"
       >
         <a href="#contact" className="flex items-center">
-          Contact Me
+          Contact me
         </a>
       </Typography>
     </ul>

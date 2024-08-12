@@ -6,11 +6,10 @@ export default function ContactForm() {
   const [state, handleSubmit] = useForm('mnnavlzy')
 
   if (state.succeeded) {
-    return <motion.p className="text-4xl"
-      initial={{ y: 20, opacity: 0 }}
+    return <motion.p className="text-lg sm:text-4xl font-bold text-center"
+      initial={{ y: 40, opacity: 0 }}
       whileInView={{ opacity: 1, y: 0 }}
       transition={{ duration: 1, delay: 0.1, type: "spring", stiffness: 80 }}
-      viewport={{ once: true }}
     >Your email has been received</motion.p>;
   }
 
@@ -18,13 +17,12 @@ export default function ContactForm() {
     <motion.div
       id="contact"
       className="flex flex-col items-center gap-y-8"
-      initial={{ y: 20, opacity: 0 }}
+      initial={{ y: 40, opacity: 0 }}
       whileInView={{ opacity: 1, y: 0 }}
       transition={{ duration: 1, delay: 0.1, type: "spring", stiffness: 80 }}
-      viewport={{ once: true }}
     >
 
-      <h2 className="text-5xl font-bold">Contact Me</h2>
+      <h2 className="text-5xl font-bold">Contact me</h2>
       <form onSubmit={handleSubmit} className="flex flex-col justify-center gap-8">
         <div>
           <label htmlFor="email" className="text-xl">
@@ -40,12 +38,13 @@ export default function ContactForm() {
             prefix="Email"
             field="email"
             errors={state.errors}
+            className="text-red-500"
           />
         </div>
 
         <div>
           <label htmlFor="message" className="text-xl">
-            your message
+            Your message
           </label>
           <textarea
             id="message"
@@ -56,6 +55,7 @@ export default function ContactForm() {
             prefix="Message"
             field="message"
             errors={state.errors}
+            className="text-red-600"
           />
         </div>
 

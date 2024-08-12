@@ -57,7 +57,7 @@ export default function InfoPart({ tag, img, name, info, object, link, index }) 
         <motion.a className="flex items-center rounded-xl bg-btnBgColor px-2 py-1 text-lg font-bold hover:underline" href={link} target="_blank" rel="noopener noreferrer"
           whileHover={{ scale: 1.1 }}
         >
-          view project {<CiLink />}
+          View project {<CiLink />}
         </motion.a>
       </div>
     </motion.div>
