@@ -32,7 +32,25 @@ export default function AboutCard({ imgLogo, about, imgGif, resumeLink, linkedLi
 
       <div className="flex flex-col lg:flex-row p-9 gap-x-12 max-w-7xl h-auto border-blue-200 bg-gradient-to-tr from-bgFromGrad to-black rounded-lg transition-all scale-95 hover:scale-100">
         <div className="flex justify-center items-center">
-          <img onMouseEnter={() => { setInMouse(true) }} onMouseLeave={() => { setInMouse(false) }} src={!inMouse ? `${imgLogo}` : `${imgGif}`} className={`w-auto h-auto bg-opacity-5 bg-white rounded-lg scale-95 ${!inMouse ? "transition-transform " : "transition-transform scale-100"}`} alt="Logo Part" />
+          {!inMouse ?
+            <img
+              onMouseEnter={() => { setInMouse(true) }}
+              onMouseLeave={() => { setInMouse(false) }}
+              src={!inMouse ? `${imgLogo}` : `${imgGif}`}
+              className={`w-auto h-auto bg-opacity-5 bg-white rounded-lg scale-95 ${!inMouse ? "transition-transform " : "transition-transform scale-100"}`}
+              alt="Logo Part"
+            />
+
+            :
+
+            <img
+              onMouseEnter={() => { setInMouse(true) }}
+              onMouseLeave={() => { setInMouse(false) }}
+              src={!inMouse ? `${imgLogo}` : `${imgGif}`}
+              className={`w-auto h-auto bg-opacity-5 bg-white rounded-lg scale-95 ${!inMouse ? "transition-transform " : "transition-transform scale-100"}`}
+              alt="Logo Part"
+            />
+          }
         </div>
 
 
