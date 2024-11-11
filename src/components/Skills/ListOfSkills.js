@@ -1,4 +1,5 @@
 import { SiNextdotjs, SiFlask, SiMysql, SiSqlite, SiDart, SiTypescript } from 'react-icons/si'
+import { TbBrandReactNative } from "react-icons/tb";
 import { FaReact, FaPhp } from "react-icons/fa";
 import { RiFlutterFill } from "react-icons/ri";
 import { IoLogoFirebase, IoLogoJavascript } from "react-icons/io5";
@@ -14,7 +15,7 @@ export default function ListOfSkills() {
     },
     {
       title: "Front End", allSkill: [{ name: 'React JS', icon: FaReact },
-      { name: 'Fluter', icon: RiFlutterFill }, { name: 'NextJS', icon: SiNextdotjs }]
+      { name: 'Fluter', icon: RiFlutterFill }, { name: 'React Native', icon: TbBrandReactNative }]
     },
     {
       title: "Back End", allSkill: [{ name: 'PHP', icon: FaPhp },
