@@ -13,7 +13,7 @@ export default function Footer({ linkedLink, GitHubLink, XLink, Email }) {
       viewport={{ once: true }}
     >
       <div className="flex flex-row flex-wrap items-center justify-center gap-y-6 gap-x-12  text-center md:justify-between">
-        <a href="#" alt="logo" className="flex justify-center items-center md:w-24 w-16" >
+        <a href="/" alt="logo" className="flex justify-center items-center md:w-24 w-16" >
           <img src={DMA} alt="logo" />
         </a>
         <div className="flex flex-wrap items-center gap-y-2 gap-x-8">

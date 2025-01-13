@@ -6,7 +6,7 @@ import { getDownloadURL, getStorage, ref } from "firebase/storage";
 import Loading from "../Loading";
 
 
-export default function InfoPart({ tag, img, name, info, object, link, index }) {
+export default function InfoPart({ tag, img, name, info, object, link, stacks, index }) {
   const [image, setImage] = useState('')
   const [imgFinishLoad, setImgFinishLoad] = useState(false);
 
@@ -53,13 +53,26 @@ export default function InfoPart({ tag, img, name, info, object, link, index }) 
         </h2>
       </div>
 
-      <div className="flex items-end h-full px-5 pb-2 pt-1">
-        <motion.a className="flex items-center rounded-xl bg-btnBgColor px-2 py-1 text-lg font-bold hover:underline" href={link} target="_blank" rel="noopener noreferrer"
+      <div className="flex flex-col justify-end items-end h-full gap-y-6 px-5 pb-2 pt-1">
+        <a className="flex items-center rounded-xl bg-btnBgColor px-2 py-1 text-lg font-bold hover:underline hover:scale-105 transition-transform" href={link} target="_blank" rel="noopener noreferrer"
           whileHover={{ scale: 1.1 }}
         >
           View project {<CiLink />}
-        </motion.a>
+        </a>
+        <div className="flex justify-start w-full flex-wrap gap-3">
+          {
+            stacks.map((value, index) => (
+              <div
+                key={index}
+                className="p-2 bg-white/30 rounded-full"
+              >
+                {value}
+              </div>
+            ))
+          }
+        </div>
       </div>
+
     </motion.div>
   )
 }
